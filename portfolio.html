@@ -1,59 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Sleepwalking - Features</title>
-  
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap-responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/theme.css">
-    <link rel="stylesheet" type="text/css" href="css/site.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection">    
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
-<body>
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="index.html">
-                <strong>Sleepwalking</strong>
-            </a>
-            <div class="nav-collapse collapse">
-                <ul class="nav pull-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li class='current'><a class='current' href="features.html">Features</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Dropdown
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="countdown.html">Countdown Page</a></li>
-                            <li><a href="signup.html">Sign Up</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- $title Sleepwalking - Features -->
+<!-- @include _head.html -->
+<!-- @include _header.html -->
 <div class="container">
     <section class="section-top">
         <div class="row">
@@ -64,7 +11,7 @@
             <div class="span4">
                 <a href="#" class="figure-video">
                     <i class="triangle"></i>
-                    <img class="figure-image" src="img/video-thumb.jpg" alt="">
+                    <img class="figure-image" src="<!-- @path video-thumb.jpg -->" alt="">
                 </a>
             </div>
         </div>
@@ -348,62 +295,7 @@
 <section class="section-pricing mbn">
     <div class="container">
         <h4 class="h3 inverted section-heading">Plans &amp; Pricing</h4>
-        <div class="row">
-    <div class="span4">
-        <div class="card-plan">
-            <div class="card-head">
-                <h5 class="plan-title">Small</h5>
-                <h5 class="plan-price">$50</h5>
-                <small class="plan-term">per year</small>
-            </div>
-            <div class="card-body">
-                <ul class="list plan-options">
-                    <li class="list-tem">Etiam porta sem malesuada</li>
-                    <li class="list-tem">Magna mollis euismod</li>
-                    <li class="list-tem">Aenean eu leo quam</li>
-                    <li class="list-tem">Pellentesque ornare</li>
-                </ul>
-                <a href="#" class="btn btn-block">Buy Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="span4">
-        <div class="card-plan-medium">
-            <div class="card-head">
-                <h5 class="plan-title">Medium</h5>
-                <h5 class="plan-price">$100</h5>
-                <small class="plan-term">per year</small>
-            </div>
-            <div class="card-body">
-                <ul class="list plan-options">
-                    <li class="list-tem">Etiam porta sem malesuada</li>
-                    <li class="list-tem">Magna mollis euismod</li>
-                    <li class="list-tem">Aenean eu leo quam</li>
-                    <li class="list-tem">Pellentesque ornare</li>
-                </ul>
-                <a href="#" class="btn btn-block">Buy Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="span4">
-        <div class="card-plan-large">
-            <div class="card-head">
-                <h5 class="plan-title">Large</h5>
-                <h5 class="plan-price">$150</h5>
-                <small class="plan-term">per year</small>
-            </div>
-            <div class="card-body">
-                <ul class="list plan-options">
-                    <li class="list-tem">Etiam porta sem malesuada</li>
-                    <li class="list-tem">Magna mollis euismod</li>
-                    <li class="list-tem">Aenean eu leo quam</li>
-                    <li class="list-tem">Pellentesque ornare</li>
-                </ul>
-                <a href="#" class="btn btn-block">Buy Now</a>
-            </div>
-        </div>
-    </div>
-</div>
+        <!-- @include _plans.html -->
     </div>
 </section>
 <section class="section-cta">
@@ -421,65 +313,8 @@
         </div>
     </div>
 </section>
-<section class="section-dark">
-    <div class="container">
-        <h4 class="h3 inverted">
-            From Our Blog
-        </h4>
-        <div class="row">
-            <div class="span4">
-                <span class="post-date">May 15, 2013</span>
-                <a href="#" class="post-title h3 inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            </div>
-            <div class="span4">
-                <span class="post-date">May 15, 2013</span>
-                <a href="#" class="post-title h3 inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            </div>
-            <div class="span4">
-                <span class="post-date">May 15, 2013</span>
-                <a href="#" class="post-title h3 inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="section-footer">
-    <div class="container">
-        <nav class="footer-links">
-            <a href="#" class="footer-link">Blog</a> 
-            <span>&nbsp;&middot;&nbsp;</span> 
-            <a href="#" class="footer-link">Twitter</a> 
-            <span>&nbsp;&middot;&nbsp;</span> 
-            <a href="#" class="footer-link">Facebook</a>  
-        </nav>
-        <div class="footer-copyright">©2013 Sleepwalking. Theme by Comma.</div>
-    </div>
-</footer>
-<!-- Scripts -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.sequence.js"></script>
-<script src="js/holder.js"></script>
-<script src="js/theme.js"></script>
-<script>      
-$(document).ready(function(){
-  var heroOptions = {
-    pagination: true,
-    autoPlay: true,
-//transitionThreshold: true,
-moveActiveFrameToTop: false,
-cycle: true
-}
-var quoteOptions = {
-  pagination: '.js-quote-slider-pagination',
-  autoPlay: true,
-//transitionThreshold: true,
-moveActiveFrameToTop: false,
-cycle: true
-}
-var sequence = $("#hero-slider").sequence(heroOptions).data("sequence");
-var sequence = $("#quote-slider").sequence(quoteOptions).data("sequence");
-});
-</script>
+<!-- @include _from_blog.html -->
+<!-- @include _footer.html -->
+<!-- @include _foot.html -->
 
-</body>
-</html>
+

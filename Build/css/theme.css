@@ -152,7 +152,8 @@ h3 {
   padding-bottom: 0;
   margin: 0;
   margin-bottom: 36px;
-  border-bottom: none; }
+  border-bottom: none;
+  padding-top: 36px; }
 
 /* grid
 -------------------------------------------------- */
