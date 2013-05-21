@@ -230,7 +230,7 @@ body:after {
     margin-top: 24px;
     display: block; }
 
-.card, .card-horizontal, .card-horizontal-alt, .card-plan, .card-plan-medium, .card-plan-large, .card-profile {
+.card, .card-horizontal, .card-horizontal-alt, .card-plan, .card-plan-medium, .card-plan-large, .card-profile, .card-portfolio {
   border-radius: 6px;
   background-color: #ffffff;
   display: block;
@@ -349,6 +349,45 @@ body:after {
     font-weight: lighter; }
   .card-profile:last-child {
     margin-bottom: 0; }
+
+.card-portfolio .card-head {
+  overflow: hidden; }
+.card-portfolio .card-heading {
+  color: #4a87ec;
+  margin-bottom: 0; }
+.card-portfolio .card-text {
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase; }
+.card-portfolio .card-body {
+  padding-bottom: 17px;
+  padding-top: 13px; }
+
+.card-portfolio-alt {
+  display: block;
+  position: relative; }
+  .card-portfolio-alt .card-head {
+    overflow: hidden; }
+  .card-portfolio-alt .card-heading {
+    color: #4a87ec;
+    margin-bottom: 0; }
+  .card-portfolio-alt .card-text {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase; }
+  .card-portfolio-alt .card-body {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    padding-bottom: 17px;
+    padding-top: 13px;
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    transition: opacity 200ms linear; }
+  .card-portfolio-alt:hover .card-body {
+    opacity: 1; }
 
 .rule, .rule-light {
   float: left;

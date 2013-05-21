@@ -388,6 +388,58 @@
       margin-bottom: 0;
     }
 }
+.card-portfolio{
+  @extend .card;
+    .card-head{
+      overflow: hidden;
+    }
+    .card-heading{
+      color:#4a87ec;
+      margin-bottom:0;
+    }
+    .card-text{
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .card-body{
+      padding-bottom: 17px;
+      padding-top: 13px;
+    }
+
+}
+.card-portfolio-alt{
+    display: block;
+    position: relative;
+    .card-head{
+      overflow: hidden;
+    }
+    .card-heading{
+      color:#4a87ec;
+      margin-bottom:0;
+    }
+    .card-text{
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .card-body{
+      background-color: #ffffff;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      opacity: 0;
+      padding-bottom: 17px;
+      padding-top: 13px;
+      @include transition(opacity 200ms linear);
+    }
+    &:hover{
+      .card-body{
+        opacity: 1;
+      }
+    }
+
+}
 
 .rule {
   float: left;
