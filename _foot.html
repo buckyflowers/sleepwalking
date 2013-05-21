@@ -1,0 +1,29 @@
+<!-- Scripts -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.sequence.js"></script>
+<script src="js/holder.js"></script>
+<script src="js/theme.js"></script>
+<script>      
+$(document).ready(function(){
+  var heroOptions = {
+    pagination: true,
+    autoPlay: true,
+//transitionThreshold: true,
+moveActiveFrameToTop: false,
+cycle: true
+}
+var quoteOptions = {
+  pagination: '.js-quote-slider-pagination',
+  autoPlay: true,
+//transitionThreshold: true,
+moveActiveFrameToTop: false,
+cycle: true
+}
+var sequence = $("#hero-slider").sequence(heroOptions).data("sequence");
+var sequence = $("#quote-slider").sequence(quoteOptions).data("sequence");
+});
+</script>
+
+</body>
+</html>
