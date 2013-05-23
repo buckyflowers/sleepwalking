@@ -541,6 +541,14 @@ textarea::-webkit-input-placeholder {
 .input-prepend .uneditable-input:focus {
   z-index: 0; }
 
+.input-stack input {
+  margin-bottom: 2px;
+  border-radius: 0; }
+.input-stack input:first-child {
+  border-radius: 6px 6px 0 0; }
+.input-stack input:last-child {
+  border-radius: 0 0 6px 6px; }
+
 .mbn {
   margin-bottom: 0 !important; }
 

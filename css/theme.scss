@@ -556,4 +556,17 @@ textarea::-webkit-input-placeholder {
   z-index: 0;
 }
 
+.input-stack{
+  input{
+    margin-bottom: 2px;
+    border-radius: 0;
+  }
+  input:first-child{
+    border-radius: 6px 6px 0 0;
+  }
+  input:last-child{
+    border-radius: 0 0 6px 6px;
+  }
+}
+
 @import '_utilities.scss';
