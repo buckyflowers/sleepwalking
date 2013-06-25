@@ -29,6 +29,9 @@ textarea {
 p {
   margin: 0;
 }
+.p{
+  line-height: 24px;
+}
 
 // make everything border-box 
 * {
@@ -137,6 +140,12 @@ h3 {
 .h4 small {
   font-size: 14px;
 }
+.h5 small {
+  font-size: 14px;
+}
+.h6 small {
+  font-size: 14px;
+}
 
 .page-header {
   padding-bottom: 0;
@@ -145,6 +154,53 @@ h3 {
   border-bottom:none;
   padding-top: 36px;
 }
+.block{
+  margin-bottom: $space-3x;
+}
+
+// text
+// html elements are not styled by default, put .is-formatted 
+// to a wrapper to get these styles. or use the individual helpers 
+// text .is-formatted
+.em, .is-formatted em,  .i, .is-formatted i {font-style:italic}
+.strong, .is-formatted strong, .b, .is-formatted b {font-weight:bold}
+.code, .is-formatted pre, .pre, .is-formatted pre {font-family:monospace}
+.p, .is-formatted p {@extend .block;line-height: 32px}
+.blockquote, .is-formatted blockquote {padding:0.2em 1em 0.2em 2em; border-left:3px solid #eee;@extend .block;}
+.big, .is-formatted big {font-size:1.125em}
+.small, .is-formatted small{font-size:.875em}
+.del, .is-formatted del {text-decoration:line-through}
+.ul, .is-formatted ul, .ol, .is-formatted ol{@extend .block;}
+.li {@extend .block;}
+.is-formatted ul, .is-formatted ol {margin-left:1.5em;padding-left:1em;}
+.is-formatted ul {list-style:disc;}
+.is-formatted ol {list-style:decimal;}
+
+.h1, .is-formatted h1,
+.h2, .is-formatted h2,
+.h3, .is-formatted h3,
+.h4, .is-formatted h4,
+.h5, .is-formatted h5,
+.h6, .is-formatted h6{
+  margin-bottom: 12px;
+}
+.is-formatted h1,
+.is-formatted h2,
+.is-formatted h3,
+.is-formatted h4,
+.is-formatted h5,
+.is-formatted h6 {margin-top:$space-2_5x;font-weight:bold;}
+
+ 
+.is-formatted h1:first-child, .is-formatted script + h1,
+.is-formatted h2:first-child, .is-formatted script + h2,
+.is-formatted h3:first-child, .is-formatted script + h3,
+.is-formatted h4:first-child, .is-formatted script + h4,
+.is-formatted h5:first-child, .is-formatted script + h5,
+.is-formatted h6:first-child, .is-formatted script + h6 {margin-top:0;}
+
+.is-formatted img {width:100%;@extend .block;}
+
 
 /* grid
 -------------------------------------------------- */

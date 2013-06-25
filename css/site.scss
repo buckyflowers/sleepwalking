@@ -208,9 +208,6 @@
   @extend .slider;
   min-height: 200px;
   overflow: hidden;
-  font-size: 26px;  
-  line-height: 40px;
-  font-weight: lighter;
   .slider-pagination {
     left: 0px;
     bottom: 42px;
@@ -218,22 +215,25 @@
   .slider-pagination-wrapper{
     left: -30px;
   }
-  .quote{
-    list-style: none;
-  }
-  .quote-body{
-    position: relative;
-    line-height: 40px;
-  }
-  .quote-author{
-    color: #8b94a0;
-    text-align: right;
-    position: relative;
-    margin-top: 24px;
-    display: block;
-  }
-
 } 
+.quote{
+  list-style: none;
+  font-size: 26px;  
+  line-height: 40px;
+  font-weight: lighter;
+}
+.quote-body{
+  position: relative;
+  line-height: 40px;
+  font-style: italic;
+}
+.quote-author{
+  color: #8b94a0;
+  text-align: right;
+  position: relative;
+  margin-top: 0;
+  display: block;
+}
 
 .slider-portfolio{
   @extend .slider;  
@@ -569,6 +569,21 @@
   margin-bottom: 0;
   background-color: #444d60;
   padding: 72px 0;
+}
+.section-portfolio-features{
+  @extend .section;
+  .section-sub{
+    border-bottom: 2px solid #fff;
+    @extend .section-dark;
+  }
+  .section-sub:first-child{
+    border-radius: 6px 6px 0 0;
+  }
+  .section-sub:last-child{
+    border-radius: 0 0 6px 6px;
+    border-bottom: none;
+  }
+
 }
 .section-footer{
   @extend .section;

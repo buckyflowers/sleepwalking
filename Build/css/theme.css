@@ -44,6 +44,9 @@ textarea {
 p {
   margin: 0; }
 
+.p {
+  line-height: 24px; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -151,12 +154,86 @@ h3 {
 .h4 small {
   font-size: 14px; }
 
+.h5 small, .media-heading small, .media-centered .media-heading small {
+  font-size: 14px; }
+
+.h6 small {
+  font-size: 14px; }
+
 .page-header {
   padding-bottom: 0;
   margin: 0;
   margin-bottom: 36px;
   border-bottom: none;
   padding-top: 36px; }
+
+.block, .p, .is-formatted p, .blockquote, .is-formatted blockquote, .ul, .is-formatted ul, .ol, .is-formatted ol, .li, .is-formatted img {
+  margin-bottom: 36px; }
+
+.em, .is-formatted em, .i, .is-formatted i {
+  font-style: italic; }
+
+.strong, .is-formatted strong, .b, .is-formatted b {
+  font-weight: bold; }
+
+.code, .is-formatted pre, .pre, .is-formatted pre {
+  font-family: monospace; }
+
+.p, .is-formatted p {
+  line-height: 32px; }
+
+.blockquote, .is-formatted blockquote {
+  padding: 0.2em 1em 0.2em 2em;
+  border-left: 3px solid #eee; }
+
+.big, .is-formatted big {
+  font-size: 1.125em; }
+
+.small, .is-formatted small {
+  font-size: .875em; }
+
+.del, .is-formatted del {
+  text-decoration: line-through; }
+
+.is-formatted ul, .is-formatted ol {
+  margin-left: 1.5em;
+  padding-left: 1em; }
+
+.is-formatted ul {
+  list-style: disc; }
+
+.is-formatted ol {
+  list-style: decimal; }
+
+.h1, .is-formatted h1,
+.h2, .is-formatted h2,
+.h3, .is-formatted h3,
+.h4, .is-formatted h4,
+.h5,
+.media-heading,
+.media-centered .media-heading, .is-formatted h5,
+.h6, .is-formatted h6 {
+  margin-bottom: 12px; }
+
+.is-formatted h1,
+.is-formatted h2,
+.is-formatted h3,
+.is-formatted h4,
+.is-formatted h5,
+.is-formatted h6 {
+  margin-top: 30px;
+  font-weight: bold; }
+
+.is-formatted h1:first-child, .is-formatted script + h1,
+.is-formatted h2:first-child, .is-formatted script + h2,
+.is-formatted h3:first-child, .is-formatted script + h3,
+.is-formatted h4:first-child, .is-formatted script + h4,
+.is-formatted h5:first-child, .is-formatted script + h5,
+.is-formatted h6:first-child, .is-formatted script + h6 {
+  margin-top: 0; }
+
+.is-formatted img {
+  width: 100%; }
 
 /* grid
 -------------------------------------------------- */
@@ -558,7 +635,7 @@ textarea::-webkit-input-placeholder {
 .man {
   margin: 0 !important; }
 
-.block {
+.block, .p, .is-formatted p, .blockquote, .is-formatted blockquote, .ul, .is-formatted ul, .ol, .is-formatted ol, .li, .is-formatted img {
   display: block !important; }
 
 .inverted {
@@ -570,6 +647,12 @@ a .inverted:hover {
 
 .light {
   color: #8b94a0; }
+
+.dark {
+  color: #2c3036; }
+
+.bold {
+  font-weight: bold; }
 
 .opacity-5 {
   opacity: .5; }

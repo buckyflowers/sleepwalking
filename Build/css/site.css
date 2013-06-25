@@ -209,26 +209,30 @@ body:after {
 
 .slider-quote {
   min-height: 200px;
-  overflow: hidden;
-  font-size: 26px;
-  line-height: 40px;
-  font-weight: lighter; }
+  overflow: hidden; }
   .slider-quote .slider-pagination {
     left: 0px;
     bottom: 42px; }
   .slider-quote .slider-pagination-wrapper {
     left: -30px; }
-  .slider-quote .quote {
-    list-style: none; }
-  .slider-quote .quote-body {
-    position: relative;
-    line-height: 40px; }
-  .slider-quote .quote-author {
-    color: #8b94a0;
-    text-align: right;
-    position: relative;
-    margin-top: 24px;
-    display: block; }
+
+.quote {
+  list-style: none;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: lighter; }
+
+.quote-body {
+  position: relative;
+  line-height: 40px;
+  font-style: italic; }
+
+.quote-author {
+  color: #8b94a0;
+  text-align: right;
+  position: relative;
+  margin-top: 0;
+  display: block; }
 
 .slider-portfolio {
   overflow: hidden;
@@ -455,7 +459,7 @@ body:after {
   border-top: 1px solid #ffffff;
   opacity: .3; }
 
-.section, .section-top, .section-features, .section-logos, .section-pricing, .section-cta, .section-dark, .section-footer {
+.section, .section-top, .section-features, .section-logos, .section-pricing, .section-cta, .section-dark, .section-portfolio-features .section-sub, .section-portfolio-features, .section-footer {
   margin-bottom: 36px; }
 
 .section-top {
@@ -494,10 +498,18 @@ body:after {
   margin-bottom: 0;
   padding-bottom: 72px; }
 
-.section-dark {
+.section-dark, .section-portfolio-features .section-sub {
   margin-bottom: 0;
   background-color: #444d60;
   padding: 72px 0; }
+
+.section-portfolio-features .section-sub {
+  border-bottom: 2px solid #fff; }
+.section-portfolio-features .section-sub:first-child {
+  border-radius: 6px 6px 0 0; }
+.section-portfolio-features .section-sub:last-child {
+  border-radius: 0 0 6px 6px;
+  border-bottom: none; }
 
 .section-footer {
   background-color: #384052;
@@ -689,7 +701,7 @@ body:after {
   height: 20px;
   position: relative;
   margin: 0;
-  background-image: url("img/no-repeat.png");
+  background-image: url(../img/no-repeat.png);
   background-repeat: no-repeat;
   vertical-align: middle;
   font-style: normal; }
