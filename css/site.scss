@@ -476,6 +476,7 @@
     position: relative;
     .card-head{
       overflow: hidden;
+      border-radius:6px;
     }
     .card-heading{
       color:#4a87ec;
@@ -494,6 +495,7 @@
       opacity: 0;
       padding-bottom: 17px;
       padding-top: 13px;
+      border-radius: 0 0 6px 6px;
       @include transition(opacity 200ms linear);
     }
     &:hover{

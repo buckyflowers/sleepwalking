@@ -423,7 +423,8 @@ body:after {
   display: block;
   position: relative; }
   .card-portfolio-alt .card-head {
-    overflow: hidden; }
+    overflow: hidden;
+    border-radius: 6px; }
   .card-portfolio-alt .card-heading {
     color: #4a87ec;
     margin-bottom: 0; }
@@ -439,6 +440,7 @@ body:after {
     opacity: 0;
     padding-bottom: 17px;
     padding-top: 13px;
+    border-radius: 0 0 6px 6px;
     -webkit-transition: opacity 200ms linear;
     -moz-transition: opacity 200ms linear;
     transition: opacity 200ms linear; }
