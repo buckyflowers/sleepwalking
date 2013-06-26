@@ -1,42 +1,5 @@
 @import "mixins";
 
-html {
-  margin: 0;
-  background-color: #384052;
-}
-body {
-  font-size: 16px;
-  line-height: 24px;
-  color:#2c3036;
-  background-color: #e7edf1;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Open Sans', sans-serif !important;
-}
-a{
-  color:#4a87ec;
-}
-a:hover {
-  text-decoration: none;
-}
-input[type="text"], 
-input[type="password"], 
-input[type="submit"],
-textarea {
-  font-family: 'Open Sans', Helvetica;
-}
-
-p {
-  margin: 0;
-}
-.p{
-  line-height: 24px;
-}
-
-// make everything border-box 
-* {
-  @include box-sizing(border-box);
-}
 
 //reset headings
 .medium{

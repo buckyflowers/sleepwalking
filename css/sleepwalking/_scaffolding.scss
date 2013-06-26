@@ -2,6 +2,11 @@
 // Scaffolding
 // --------------------------------------------------
 
+html {
+  margin: 0;
+  background-color: $htmlBackground;
+}
+
 
 // Body reset
 // -------------------------
@@ -13,6 +18,7 @@ body {
   line-height: $baseLineHeight;
   color: $textColor;
   background-color: $bodyBackground;
+  position: relative;
 }
 
 
@@ -26,7 +32,7 @@ a {
 a:hover,
 a:focus {
   color: $linkColorHover;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 

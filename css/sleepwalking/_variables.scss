@@ -32,25 +32,26 @@ $purple:                #7a43b6 !default;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        $white !default;
-$textColor:             $grayDark !default;
+$htmlBackground:        #384052 !default; //sleepwalking
+$bodyBackground:        #e7edf1 !default; //sleepwalking
+$textColor:             #2c3036 !default; //sleepwalking
 
 
 // Links
 // -------------------------
-$linkColor:             #08c !default;
+$linkColor:             #4a87ec !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
 // Typography
 // -------------------------
-$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$sansFontFamily:        "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;  //sleepwalking
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
-$baseFontSize:          14px !default;
+$baseFontSize:          16px !default;  //sleepwalking
 $baseFontFamily:        $sansFontFamily !default;
-$baseLineHeight:        20px !default;
+$baseLineHeight:        24px !default; //sleepwalking
 $altFontFamily:         $serifFontFamily !default;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
