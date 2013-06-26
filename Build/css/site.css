@@ -343,7 +343,6 @@ body:after {
 
 .card-plan .card-head, .card-plan-medium .card-head, .card-plan-large .card-head {
   padding: 24px;
-  padding-top: 14px;
   background-color: #4aa5ec;
   color: #ffffff; }
 .card-plan .plan-title, .card-plan-medium .plan-title, .card-plan-large .plan-title, .card-plan .plan-term, .card-plan-medium .plan-term, .card-plan-large .plan-term {
@@ -359,12 +358,11 @@ body:after {
   margin: 0;
   margin-top: 24px; }
 .card-plan .card-body, .card-plan-medium .card-body, .card-plan-large .card-body {
-  padding: 6px; }
+  padding: 24px; }
 .card-plan .plan-options, .card-plan-medium .plan-options, .card-plan-large .plan-options {
   margin: 0;
   margin-left: 18px;
   color: #818792;
-  padding: 14px 14px 16px;
   margin-bottom: 94px; }
 .card-plan .btn, .card-plan-medium .btn, .card-plan-large .btn {
   background-color: #4aa5ec; }
@@ -375,14 +373,14 @@ body:after {
   margin-left: -12px;
   margin-right: -12px; }
   .card-plan-medium .card-head {
-    padding-top: 26px;
+    padding: 36px;
     height: 312px; }
   .card-plan-medium .plan-options {
-    margin-left: 30px; }
+    margin-left: 36px; }
   .card-plan-medium .card-head, .card-plan-medium .btn {
     background-color: #4a87ec; }
   .card-plan-medium .btn {
-    margin: 0 14px 14px 14px;
+    margin: 0 12px 12px 12px;
     width: auto; }
 
 .card-plan-large .card-head, .card-plan-large .btn {
