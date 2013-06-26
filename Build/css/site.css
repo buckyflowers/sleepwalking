@@ -32,8 +32,7 @@ body:after {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 1;
-    line-height: 0; }
+    z-index: 1; }
   .slider .slide-container, .slider-hero .slide-container, .slider-quote .slide-container, .slider-portfolio .slide-container {
     position: relative !important;
     max-width: 972px;
@@ -215,6 +214,8 @@ body:after {
     bottom: 42px; }
   .slider-quote .slider-pagination-wrapper {
     left: -30px; }
+  .slider-quote .slide {
+    position: relative; }
 
 .quote {
   list-style: none;
@@ -343,6 +344,7 @@ body:after {
 
 .card-plan .card-head, .card-plan-medium .card-head, .card-plan-large .card-head {
   padding: 24px;
+  padding-top: 14px;
   background-color: #4aa5ec;
   color: #ffffff; }
 .card-plan .plan-title, .card-plan-medium .plan-title, .card-plan-large .plan-title, .card-plan .plan-term, .card-plan-medium .plan-term, .card-plan-large .plan-term {
@@ -358,11 +360,12 @@ body:after {
   margin: 0;
   margin-top: 24px; }
 .card-plan .card-body, .card-plan-medium .card-body, .card-plan-large .card-body {
-  padding: 24px; }
+  padding: 6px; }
 .card-plan .plan-options, .card-plan-medium .plan-options, .card-plan-large .plan-options {
   margin: 0;
   margin-left: 18px;
   color: #818792;
+  padding: 14px 14px 16px;
   margin-bottom: 94px; }
 .card-plan .btn, .card-plan-medium .btn, .card-plan-large .btn {
   background-color: #4aa5ec; }
@@ -373,14 +376,14 @@ body:after {
   margin-left: -12px;
   margin-right: -12px; }
   .card-plan-medium .card-head {
-    padding: 36px;
+    padding-top: 26px;
     height: 312px; }
   .card-plan-medium .plan-options {
-    margin-left: 36px; }
+    margin-left: 30px; }
   .card-plan-medium .card-head, .card-plan-medium .btn {
     background-color: #4a87ec; }
   .card-plan-medium .btn {
-    margin: 0 12px 12px 12px;
+    margin: 0 14px 14px 14px;
     width: auto; }
 
 .card-plan-large .card-head, .card-plan-large .btn {

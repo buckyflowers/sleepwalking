@@ -16,7 +16,6 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    line-height: 0;
   }
   .slide-container{
     position: relative !important;
@@ -214,6 +213,9 @@
   }
   .slider-pagination-wrapper{
     left: -30px;
+  }
+  .slide {
+    position: relative;
   }
 } 
 .quote{
