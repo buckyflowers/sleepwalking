@@ -374,7 +374,6 @@
   @extend .card;
   .card-head{
     padding:24px;
-    padding-top:14px;
     background-color: #4aa5ec;
     color: #ffffff;
   }
@@ -389,13 +388,12 @@
     margin-top: 24px;
   }
   .card-body{
-    padding:6px;
+    padding:24px;
   }
   .plan-options{
     margin: 0;
     margin-left: 18px;
     color: #818792;
-    padding: 14px 14px 16px;
     margin-bottom: 94px;
   }
   .btn{
@@ -409,7 +407,7 @@
   margin-left: -12px;
   margin-right: -12px;
   .card-head{
-    padding-top:26px;
+    padding:36px;
     height: 312px;
   }
   .plan-options{
@@ -419,7 +417,7 @@
     background-color: #4a87ec;
   }
   .btn{
-    margin: 0 14px 14px 14px;
+    margin: 0 12px 12px 12px;
     width: auto;
   }
 }
