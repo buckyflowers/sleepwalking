@@ -1,4 +1,4 @@
-
+@import "mixins";
 
 html {
   margin: 0;
@@ -1055,7 +1055,7 @@ textarea::-webkit-input-placeholder {
   margin-left: -12px;
   margin-right: -12px;
   .card-head{
-    padding-top:36px;
+    padding:36px;
     height: 312px;
   }
   .plan-options{
