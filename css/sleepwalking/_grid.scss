@@ -3,26 +3,6 @@
 // --------------------------------------------------
 
 
-// Fixed (940px)
-@include grid-core($gridColumnWidth, $gridGutterWidth);
-
-// Fluid (940px)
-@include grid-fluid($fluidGridColumnWidth, $fluidGridGutterWidth);
-
-// Reset utility classes due to specificity
-[class*="span"].hide,
-.row-fluid [class*="span"].hide {
-  display: none;
-}
-
-[class*="span"].pull-right,
-.row-fluid [class*="span"].pull-right {
-  float: right;
-}
-
-
-/* grid
--------------------------------------------------- */
 .container,
 .navbar .container,
 .navbar-static-top .container,
@@ -45,18 +25,18 @@
 }
 
 // desktop grid
-.span1, .span1of12 {@extend .g; width:percentage(1/12);}
-.span2, .span1of6 {@extend .g; width:percentage(2/12);}
-.span3, .span1of4 {@extend .g; width:percentage(3/12);}
-.span4, .span1of3 {@extend .g; width:percentage(4/12);}
-.span5 {@extend .g; width:percentage(5/12);}
-.span6, .span1of2 {@extend .g; width:percentage(6/12);}
-.span7 {@extend .g; width:percentage(7/12);}
-.span8, .span2of3 {@extend .g; width:percentage(8/12);}
-.span9, .span3of4 {@extend .g; width:percentage(9/12);}
-.span10 {@extend .g; width:percentage(10/12);}
-.span11 {@extend .g; width:percentage(11/12);}
-.span12, .span-full {@extend .g; width:percentage(12/12);}
+.span1, .span1of12 {width:percentage(1/12);}
+.span2, .span1of6 {width:percentage(2/12);}
+.span3, .span1of4 {width:percentage(3/12);}
+.span4, .span1of3 {width:percentage(4/12);}
+.span5 {width:percentage(5/12);}
+.span6, .span1of2 {width:percentage(6/12);}
+.span7 {width:percentage(7/12);}
+.span8, .span2of3 {width:percentage(8/12);}
+.span9, .span3of4 {width:percentage(9/12);}
+.span10 {width:percentage(10/12);}
+.span11 {width:percentage(11/12);}
+.span12, .span-full {width:percentage(12/12);}
 
 // desktop offsets
 .offset1 {margin-left:percentage(1/12);}
