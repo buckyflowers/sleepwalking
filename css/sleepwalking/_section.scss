@@ -1,0 +1,87 @@
+//
+// Sections
+// --------------------------------------------------
+
+.section{
+  @include space(m,b,$space,3)
+}
+.section-top{
+  @extend .section;
+  padding-top:36px;
+}
+.section-sub{
+  margin-bottom: 18px;
+}
+.section-heading{
+  @include text-medium;
+  padding: 0;
+  margin:0;
+  margin-bottom:24px;
+}
+.section-features {
+  @extend .section;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.section-logos {
+  @extend .section;
+  margin-bottom: 72px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  .section-heading{
+    padding: 26px 36px 0;
+  }
+}
+.section-pricing {
+  @extend .section;
+  padding-top: 72px;
+  background-color: #667085;
+  .section-heading{
+    margin-bottom:36px;
+  }
+}
+.section-cta{
+  @extend .section;
+  background-color: #667085;
+  margin-bottom: 0;
+  padding-bottom: 72px;
+}
+.section-dark{
+  @extend .section;
+  margin-bottom: 0;
+  background-color: #444d60;
+  padding: 72px 0;
+}
+.section-portfolio-features{
+  @extend .section;
+  .section-sub{
+    border-bottom: 2px solid #fff;
+    @extend .section-dark;
+  }
+  .section-sub:first-child{
+    border-radius: 6px 6px 0 0;
+  }
+  .section-sub:last-child{
+    border-radius: 0 0 6px 6px;
+    border-bottom: none;
+  }
+
+}
+.section-footer{
+  @extend .section;
+  background-color: #384052;
+  margin-bottom: 0;
+  height: 90px;
+  line-height: 90px;  
+  color: #818792;
+  .footer-links{
+    float: left;
+    line-height: 90px;
+    .footer-link{
+     color:#ffffff;
+     &:hover{
+      color:#ffffff;
+      opacity: .7;
+    }
+  }
+}

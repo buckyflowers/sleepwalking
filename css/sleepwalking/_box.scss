@@ -1,0 +1,254 @@
+//
+// Box
+// --------------------------------------------------
+
+
+.box{
+  .box-body{
+    background-color: #ffffff;
+    padding: 24px;
+  }
+  .box-footer{
+    background-color: #e7edf1;
+    border-radius: 0 0 6px 6px;
+    padding: 24px;
+  }
+}
+.box-count{
+  height: 300px;
+  border-radius: 6px;
+  padding: 24px;
+  .box-header{
+    margin-top: 0;
+    color: #fff;
+    line-height: 26px;
+    font-size: 26px;
+  }
+  .box-body{
+    font-weight: 300;
+    font-size: 110px;
+    position: absolute;
+    bottom: 36px;
+    line-height: 86px;
+    color: #ffffff;
+  }
+}
+.box-count-days {
+  background-color: #4aa5ec;
+}
+.box-count-hours {
+  background-color: #4a87ec;
+}
+.box-count-minutes {
+  background-color: #7073ec;
+}
+
+//
+// Card
+// --------------------------------------------------
+
+.card {
+  border-radius: 6px;
+  background-color: #ffffff;
+  display: block;
+  overflow: hidden;
+}
+.card-image{
+  width: 100%;
+}
+.card-head{
+  height: 300px;
+  display: block;
+}
+.card-body{
+  padding:24px;
+  padding-bottom:15px;
+  display: block;
+}
+.card-heading{
+  margin-top:0;
+  margin-bottom:8px;
+  color: #2c3036;
+}
+.card-text{
+  color:#818792;
+  display: block;
+}
+.card-link{
+  margin-top: 19px;
+  display: block;
+}
+
+// card horizontal
+.card-horizontal {
+  @extend .card;
+  border-radius: 0;
+  min-height: 384px;
+  background-color: #ffffff;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 2px;
+  .card-head{
+    padding-right: 48px;
+  }
+  .card-body{
+    padding:80px 84px 15px 0;
+  }
+  .card-heading{
+    margin-bottom:40px;
+  }
+  .card-text{
+    font-weight: lighter;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.card-horizontal-alt {
+  @extend .card-horizontal;
+  .card-body{
+    padding:80px 48px 15px 84px;
+  }
+  .card-head{
+    padding-right: 0;
+    padding-left: 48px;
+  }
+}
+.card-plan{
+  @extend .card;
+  .card-head{
+    padding:24px;
+    background-color: #4aa5ec;
+    color: #ffffff;
+  }
+  .plan-title, .plan-term{
+    @include text-medium;
+    line-height: 26px;
+    margin: 0;
+  }
+  .plan-price{
+    @include text-large;
+    margin: 0;
+    margin-top: 24px;
+  }
+  .card-body{
+    padding:24px;
+  }
+  .plan-options{
+    margin: 0;
+    margin-left: 18px;
+    color: #818792;
+    margin-bottom: 94px;
+  }
+  .btn{
+    background-color: #4aa5ec;
+  }
+}
+.card-plan-medium {
+  @extend .card-plan;
+  position: relative;
+  top: -12px;
+  margin-left: -12px;
+  margin-right: -12px;
+  .card-head{
+    padding:36px;
+    height: 312px;
+  }
+  .plan-options{
+    margin-left: 36px;
+  }
+  .card-head, .btn {
+    background-color: #4a87ec;
+  }
+  .btn{
+    margin: 0 12px 12px 12px;
+    width: auto;
+  }
+}
+.card-plan-large {
+  @extend .card-plan;
+  .card-head, .btn {
+    background-color: #7073ec;
+  }
+  .btn {
+    background-color: #7073ec;
+  }
+}
+.card-profile{
+  @extend .card;
+    border-radius: 0;
+    min-height: 384px;
+    background-color: #ffffff;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 2px;
+    .card-head{
+      padding-right: 48px;
+    }
+    .card-body{
+      padding:80px 84px 15px 0;
+    }
+    .card-heading{
+      margin-bottom:40px;
+    }
+    .card-text{
+      font-weight: lighter;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+}
+.card-portfolio{
+  @extend .card;
+    .card-head{
+      overflow: hidden;
+    }
+    .card-heading{
+      color:#4a87ec;
+      margin-bottom:0;
+    }
+    .card-text{
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .card-body{
+      padding-bottom: 17px;
+      padding-top: 13px;
+    }
+
+}
+.card-portfolio-alt{
+    display: block;
+    position: relative;
+    .card-head{
+      overflow: hidden;
+      border-radius:6px;
+    }
+    .card-heading{
+      color:#4a87ec;
+      margin-bottom:0;
+    }
+    .card-text{
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .card-body{
+      background-color: #ffffff;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      opacity: 0;
+      padding-bottom: 17px;
+      padding-top: 13px;
+      border-radius: 0 0 6px 6px;
+      @include transition(opacity 200ms linear);
+    }
+    &:hover{
+      .card-body{
+        opacity: 1;
+      }
+    }
+
+}

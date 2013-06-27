@@ -2,21 +2,117 @@
 // Component animations
 // --------------------------------------------------
 
+// fade animation
+.fade{
+  opacity:0;
+  @include transition-duration(1.5s);
+}
+.animate-in .fade{
+  opacity: 1;
+  @include transition-duration(1.5s);
+}
+.animate-out .fade{
+  opacity: 0;    
+  @include transition-duration(1s);
+}
 
-.fade {
+// slide up animation
+.slide-up, .animate-out .slide-up {
+  @include transform(translate3D(0,100%,0));
+  @include transition-duration(1.5s);
+} 
+.animate-in .slide-up{
+  @include transform(translate3D(0,0,0)); 
+  @include transition-duration(1.5s);
+}
+
+// slide down animation
+.slide-down, .animate-out .slide-down {
+  @include transform(translate3D(0,-400%,0));
+  @include transition-duration(1.5s);
+} 
+.animate-in .slide-down{
+  @include transform(translate3D(0,0,0)); 
+  @include transition-duration(1.5s);
+}
+
+// slide right animation
+.slide-right {
+  @include transform(translate3D(-100%,0,0));
+  @include transition-duration(1.5s);
+} 
+.animate-in .slide-right{
+  @include transform(translate3D(0,0,0)); 
+  @include transition-duration(1.5s);
+}
+.animate-out .slide-right {
+  @include transform(translate3D(100%,0,0));
+  @include transition-duration(1.5s);
+} 
+
+// slide left animation
+.slide-left {
+  @include transform(translate3D(100%,0,0));
+  @include transition-duration(1.5s);
+} 
+.animate-in .slide-left{
+  @include transform(translate3D(0,0,0)); 
+  @include transition-duration(1.5s);
+}
+.animate-out .slide-left {
+  @include transform(translate3D(-100%,0,0));
+  @include transition-duration(1.5s);
+} 
+
+// fade-in-left animation
+.fade-in-left,
+.animate-out .fade-in-left {
   opacity: 0;
-  @include transition(opacity .15s linear);
-  &.in {
-    opacity: 1;
-  }
+  @include transform(translate3D(100%,0,0));
+  @include transition-duration(1.5s);
+} 
+.animate-in .fade-in-left{
+  opacity: 1;
+  @include transform(translate3D(0,0,0)); 
+  @include transition-duration(1.5s);
 }
 
-.collapse {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  @include transition(height .35s ease);
-  &.in {
-    height: auto;
-  }
+// fade-in-right animation
+.fade-in-right,
+.animate-out .fade-in-right {
+  opacity: 0;
+  @include transform(translate3D(-100%,0,0));
+  @include transition-duration(1.5s);
+} 
+.animate-in .fade-in-right{
+  opacity: 1;
+  @include transform(translate3D(0,0,0)); 
+  @include transition-duration(1.5s);
 }
+
+// fade-in-down animation
+.fade-in-down, .animate-out .fade-in-down {
+  opacity: 0;
+  @include transform(translate3D(0,-100%,0));
+  @include transition-duration(1.5s);
+} 
+.animate-in .fade-in-down{
+  opacity: 1;
+  @include transform(translate3D(0,0,0)); 
+  @include transition-duration(1.5s);
+}
+
+// fade-in-up animation
+.fade-in-up, .animate-out .fade-in-up {
+  opacity: 0;
+  @include transform(translate3D(0,100%,0));
+  @include transition-duration(1.5s);
+} 
+.animate-in .fade-in-up{
+  opacity: 1;
+  @include transform(translate3D(0,0,0)); 
+  @include transition-duration(1.5s);
+}
+
+
+
