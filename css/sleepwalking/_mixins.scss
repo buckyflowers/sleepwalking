@@ -698,15 +698,6 @@
 
 // end bootstrap mixins
 
-// vertical rhythm in pixels (returns pixels)
-$base: 12; // vertical space unit
-$space-0_5x: ($base/2) * 1px;
-$space: $base*1px;
-$space-1_5x: ($base * 1.5) * 1px;
-$space-2x: ($base * 2) * 1px;
-$space-2_5x: ($base * 2.5) * 1px;
-$space-3x: ($base * 3) * 1px;
-$space-4x: ($base * 4) * 1px;
 
 
 @mixin text-medium{
