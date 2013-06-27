@@ -2,24 +2,24 @@
 // Hero unit
 // --------------------------------------------------
 
-
-.hero-unit {
-  padding: 60px;
-  margin-bottom: 30px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: $baseLineHeight * 1.5;
-  color: $heroUnitLeadColor;
-  background-color: $heroUnitBackground;
-  @include border-radius(6px);
-  h1 {
-    margin-bottom: 0;
-    font-size: 60px;
-    line-height: 1;
-    color: $heroUnitHeadingColor;
-    letter-spacing: -1px;
+.hero-unit{
+  padding:72px 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  border-radius: 0;
+  h1{
+    margin:0;
+    font-size: 68px;
+    margin-bottom: 24px;
   }
-  li {
-    line-height: $baseLineHeight * 1.5; // Reset since we specify in type.scss
-  }
+}
+.hero-heading{
+  @include text-medium;
+  color:#ffffff;
+  margin-bottom: 32px
+}
+.hero-text{
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
 }
