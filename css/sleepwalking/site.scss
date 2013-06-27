@@ -12,6 +12,13 @@
   @include text-xlarge;
 }
 
+a {
+  color: #4a87ec;
+  &:hover {
+    color: #76a7f8;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -247,6 +254,9 @@ h3 {
 .navbar .nav > li > a {
   color: #4a87ec;
   padding-top:66px;
+  &:hover {
+    color: #76a7f8;
+  }
 }
 
 
@@ -256,12 +266,6 @@ h3 {
   margin: 0;
   color: #2c3036;
   font-size: 42px;
-}
-.navbar .brand:hover,
-.navbar .nav > li > a:hover,
-.navbar .brand:focus,
-.navbar .nav > li > a:focus {
-  color: #2c3036;
 }
 .navbar .brand-slogan {
   color:#abacad;
@@ -326,6 +330,7 @@ h3 {
 /* .btn
 -------------------------------------------------- */
 .btn {
+  position: relative;
   height: 48px;
   padding: 0px 24px;
   font-size: 26px;
@@ -334,13 +339,34 @@ h3 {
   color: #ffffff;
   text-shadow: none;
   background-color: #4a87ec;
-  *background-color: #4a87ec;
   background-image: none;
   border: none;
-  *border: 0;
   border-radius: 6px;
   filter: none;
-  box-shadow: none
+  box-shadow: none;
+  &:before {
+    border-radius: 6px;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &:hover {
+    &:before {
+      background: #fff;
+      opacity: .1;
+    }
+  }
+  &:active {
+    box-shadow: inset 0 2px 0 rgba(0,0,0,.1);
+    &:before {
+      background: #000;
+      opacity: .1;
+    }
+  }
 }
 .btn:hover,
 .btn:focus,
@@ -348,9 +374,8 @@ h3 {
 .btn.active,
 .btn.disabled,
 .btn[disabled] {
-  color: #ffffff;
   background-color: #4a87ec;
-  *background-color: #4a87ec;
+  color: #ffffff;
 }
 .btn-huge {
   height: 102px;
@@ -363,6 +388,9 @@ h3 {
 .btn-huge-alt {
   @extend .btn-huge;
   background-color: #35c877;
+  &:hover {
+    background-color: #35c877;
+  }
 }
 .close {
   font-size: 20px;
@@ -661,17 +689,20 @@ textarea::-webkit-input-placeholder {
   }
   .slider-pagination-page.current {
     opacity: 1;
+    span {
+      background: #fff;
+    }
   }
 
   .slider-pagination-page:hover {
     opacity: 1;
   }
   .slider-pagination-page span {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     display: block;
-    background: #f6f6f8;
-    box-shadow: 0 0 0 3px rgba(21,21,21,.30) ;
+    background: transparent;
+    border: solid 2px #fff;
     @include transform(rotate(45deg));
   }
 }
@@ -824,6 +855,19 @@ textarea::-webkit-input-placeholder {
   }
   .slider-pagination-wrapper{
     left: -30px;
+  }
+  .slider-pagination-page {
+    span {
+      border-color: #000;
+      opacity: .5;
+      &:hover {
+        opacity: .8;
+      }
+      &.active {
+        opacity: .8;
+        background: #000;
+      }
+    }
   }
   .slide {
     position: relative;
@@ -1035,6 +1079,9 @@ textarea::-webkit-input-placeholder {
 .card-plan-large {
   @extend .card-plan;
   .card-head, .btn {
+    background-color: #7073ec;
+  }
+  .btn {
     background-color: #7073ec;
   }
 }
