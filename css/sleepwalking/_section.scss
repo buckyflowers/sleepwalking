@@ -78,10 +78,11 @@
     float: left;
     line-height: 90px;
     .footer-link{
-     color:#ffffff;
-     &:hover{
       color:#ffffff;
-      opacity: .7;
+      &:hover{
+        color:#ffffff;
+        opacity: .7;
+      }
     }
   }
 }

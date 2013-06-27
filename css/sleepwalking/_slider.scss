@@ -6,6 +6,9 @@
 .slider {
   position: relative; /* required */
   z-index: 1;
+  .slide-bg{
+   top:0
+  }
   .sequence-canvas { /* required */
     margin:0;
     height: 100%; 

@@ -54,6 +54,14 @@
 //@import "sleepwalking/carousel";
 @import "sleepwalking/hero-unit";
 
+// Components: Sleepwalking
+@import "sleepwalking/slider";  
+@import "sleepwalking/figure";  
+@import "sleepwalking/list";
+@import "sleepwalking/box"; 
+@import "sleepwalking/section"; 
+
+
 // Utility classes
 @import "sleepwalking/utilities"; // Has to be last to override when necessary
 
