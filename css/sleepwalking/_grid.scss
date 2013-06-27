@@ -19,3 +19,65 @@
 .row-fluid [class*="span"].pull-right {
   float: right;
 }
+
+
+/* grid
+-------------------------------------------------- */
+.container,
+.navbar .container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 972px;
+}
+
+.row {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 0;
+  position:relative;
+  padding:0 16px;
+}
+
+// desktop grid
+.span1, .span1of12 {@extend .g; width:percentage(1/12);}
+.span2, .span1of6 {@extend .g; width:percentage(2/12);}
+.span3, .span1of4 {@extend .g; width:percentage(3/12);}
+.span4, .span1of3 {@extend .g; width:percentage(4/12);}
+.span5 {@extend .g; width:percentage(5/12);}
+.span6, .span1of2 {@extend .g; width:percentage(6/12);}
+.span7 {@extend .g; width:percentage(7/12);}
+.span8, .span2of3 {@extend .g; width:percentage(8/12);}
+.span9, .span3of4 {@extend .g; width:percentage(9/12);}
+.span10 {@extend .g; width:percentage(10/12);}
+.span11 {@extend .g; width:percentage(11/12);}
+.span12, .span-full {@extend .g; width:percentage(12/12);}
+
+// desktop offsets
+.offset1 {margin-left:percentage(1/12);}
+.offset2 {margin-left:percentage(2/12);}
+.offset3 {margin-left:percentage(3/12);}
+.offset4 {margin-left:percentage(4/12);}
+.offset5 {margin-left:percentage(5/12);}
+.offset6 {margin-left:percentage(6/12);}
+.offset7 {margin-left:percentage(7/12);}
+.offset8 {margin-left:percentage(8/12);}
+.offset9 {margin-left:percentage(9/12);}
+.offset10 {margin-left:percentage(10/12);}
+.offset11 {margin-left:percentage(11/12);}
+.offset12 {margin-left:percentage(12/12);}
+
+
+.row-narrow {
+  @extend .row;
+  margin-left: -6px;
+  margin-right: -6px;
+  [class*="span"] {
+    padding:0 6px;
+  }
+}

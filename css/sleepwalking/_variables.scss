@@ -55,8 +55,9 @@ $baseLineHeight:        24px !default; //sleepwalking
 $altFontFamily:         $serifFontFamily !default;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    normal !default;    // sleepwalking
+$headingsFontWeight:    bold !default;    // sleepwalking
 $headingsColor:         inherit !default; // empty to use BS default, $textColor
+$headingsLineHeight:    20px !default; // sleepwalking
 
 
 // Sleepwalking Spacing
