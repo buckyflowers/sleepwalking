@@ -628,14 +628,16 @@ textarea::-webkit-input-placeholder {
   -o-transition-duration: 1.5s;
   transition-duration: 1.5s; }
 
-.animate-in .fade {
+.animate-in .fade,
+.animate-in.fade {
   opacity: 1;
   -webkit-transition-duration: 1.5s;
   -moz-transition-duration: 1.5s;
   -o-transition-duration: 1.5s;
   transition-duration: 1.5s; }
 
-.animate-out .fade {
+.animate-out .fade,
+.animate-out.fade {
   opacity: 0;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -1427,7 +1429,8 @@ textarea::-webkit-input-placeholder {
 .slider-rounded {
   overflow: hidden;
   height: 468px;
-  background: #262626; }
+  background: #262626;
+  border-radius: 6px; }
   .slider-rounded .slide-bg {
     position: absolute;
     width: 100%;
@@ -1435,10 +1438,7 @@ textarea::-webkit-input-placeholder {
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-    border-radius: 6px; }
-  .slider-rounded .slide {
-    border-radius: 6px; }
+    background-position: top center; }
 
 .figure-video {
   display: block;

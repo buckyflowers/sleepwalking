@@ -323,6 +323,7 @@
   overflow: hidden;
   height: 468px;
   background: #262626;
+  border-radius: 6px;
   .slide-bg {    
     position: absolute;
     width: 100%;
@@ -331,9 +332,5 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    border-radius: 6px;
-  }
-  .slide{
-    border-radius: 6px;
   }
 }

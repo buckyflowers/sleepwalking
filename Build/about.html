@@ -167,7 +167,22 @@
         <h2 class="section-heading">What We Do</h2>
         <div id="about-slider" class="slider-rounded">
             <ul class="sequence-canvas">
-                <li id="slide-1" class="slide">
+                <li id="slide-1" class="slide fade">
+                    <div class="slide-bg" style="background-image:url(img/backgrounds/bg-6.jpg)"></div>
+
+                    <div class="slide-container">
+                        <div class="row">
+                            <div class="span4 offset1">
+                                <h2 class="hero-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                <p class="hero-text">
+                                    Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida
+                                </p>
+                            </div>
+                            <div class="span7"></div>
+                        </div>
+                    </div>
+                </li>  
+                <li id="slide-2" class="slide fade">
                     <div class="slide-bg" style="background-image:url(img/backgrounds/bg-6.jpg)"></div>
 
                     <div class="slide-container">
@@ -183,6 +198,12 @@
                     </div>
                 </li>   
             </ul>
+            <div class="slider-pagination">
+                <ul class="slider-pagination-wrapper sequence-pagination js-slider-pagination">
+                    <li class="slider-pagination-page"><span>1</span></li>
+                    <li class="slider-pagination-page"><span>2</span></li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="section">
@@ -270,7 +291,7 @@ var quoteOptions = {
   cycle: true
 }
 var aboutOptions = {
-  pagination: '.js-about-slider-pagination',
+  pagination: '.js-slider-pagination',
   autoPlay: true,
   //transitionThreshold: true,
   moveActiveFrameToTop: false,
