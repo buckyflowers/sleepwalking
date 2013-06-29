@@ -165,27 +165,36 @@
     </section>
     <section class="section">
         <h2 class="section-heading">What We Do</h2>
-        <div class="hero-unit" style="background-image:url(img/backgrounds/bg-6.jpg)"><div class="row">
-            <div class="span4 offset1">
-                <h2 class="hero-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                <p class="hero-text">
-                    Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida
-                </p>
-            </div>
-            <div class="span7"></div>
-        </div>
+        <div id="about-slider" class="slider-rounded">
+            <ul class="sequence-canvas">
+                <li id="slide-1" class="slide">
+                    <div class="slide-bg" style="background-image:url(img/backgrounds/bg-6.jpg)"></div>
+
+                    <div class="slide-container">
+                        <div class="row">
+                            <div class="span4 offset1">
+                                <h2 class="hero-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                <p class="hero-text">
+                                    Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida
+                                </p>
+                            </div>
+                            <div class="span7"></div>
+                        </div>
+                    </div>
+                </li>   
+            </ul>
         </div>
     </section>
     <section class="section">
-        <h2 class="section-heading">Contact Us</h2>
+        <h2 class="section-heading mb0">Contact Us</h2>
         <div class="row">
-            <div class="span4">
-                <p>1600 Pennsylvania Ave<br>
+            <div class="span6">
+                <p class="h3 light">1600 Pennsylvania Ave<br>
                 Washington, DC 20500<br>
                 (202) 456-1111
                 </p>
             </div>
-            <div class="span6 offset2">
+            <div class="span6 h3">
                 <p>hi@commacreative.com<br>
                 @commacreative<br>
                 </p>
@@ -249,19 +258,27 @@ $(document).ready(function(){
   var heroOptions = {
     pagination: true,
     autoPlay: true,
-//transitionThreshold: true,
-moveActiveFrameToTop: false,
-cycle: true
+    //transitionThreshold: true,
+    moveActiveFrameToTop: false,
+    cycle: true
 }
 var quoteOptions = {
   pagination: '.js-quote-slider-pagination',
   autoPlay: true,
-//transitionThreshold: true,
-moveActiveFrameToTop: false,
-cycle: true
+  //transitionThreshold: true,
+  moveActiveFrameToTop: false,
+  cycle: true
+}
+var aboutOptions = {
+  pagination: '.js-about-slider-pagination',
+  autoPlay: true,
+  //transitionThreshold: true,
+  moveActiveFrameToTop: false,
+  cycle: true
 }
 var sequence = $("#hero-slider").sequence(heroOptions).data("sequence");
 var sequence = $("#quote-slider").sequence(quoteOptions).data("sequence");
+var sequence = $("#about-slider").sequence(aboutOptions).data("sequence");
 });
 </script>
 
