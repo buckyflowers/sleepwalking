@@ -1177,14 +1177,18 @@ textarea::-webkit-input-placeholder {
     left: -50%;
     position: relative; }
   .slider .slider-pagination-page, .slider-hero .slider-pagination-page, .slider-quote .slider-pagination-page, .slider-portfolio .slider-pagination-page {
-    padding: 10px;
     text-indent: -99999em;
     float: left;
-    margin: 0;
+    margin: 6px;
     cursor: pointer;
     display: block;
-    opacity: .3;
-    transition: opacity .1s linear; }
+    opacity: .5;
+    transition: opacity .1s linear;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
   .slider .slider-pagination-page.current, .slider-hero .slider-pagination-page.current, .slider-quote .slider-pagination-page.current, .slider-portfolio .slider-pagination-page.current {
     opacity: 1; }
     .slider .slider-pagination-page.current span, .slider-hero .slider-pagination-page.current span, .slider-quote .slider-pagination-page.current span, .slider-portfolio .slider-pagination-page.current span {
@@ -1195,13 +1199,9 @@ textarea::-webkit-input-placeholder {
     width: 8px;
     height: 8px;
     display: block;
-    background: transparent;
-    border: solid 2px #fff;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg); }
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    border: solid 2px #fff; }
 
 .slider-hero {
   overflow: hidden;
@@ -1345,12 +1345,13 @@ textarea::-webkit-input-placeholder {
     left: -30px; }
   .slider-quote .slider-pagination-page span {
     border-color: #000;
-    opacity: .5; }
+    background: transparent;
+    opacity: .3; }
     .slider-quote .slider-pagination-page span:hover {
-      opacity: .8; }
-    .slider-quote .slider-pagination-page span.active {
-      opacity: .8;
-      background: #000; }
+      opacity: .5; }
+  .slider-quote .slider-pagination-page.current span {
+    opacity: .5;
+    background: #000; }
   .slider-quote .slide {
     position: relative; }
 
