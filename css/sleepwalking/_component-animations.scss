@@ -7,11 +7,13 @@
   opacity:0;
   @include transition-duration(1.5s);
 }
-.animate-in .fade{
+.animate-in .fade, 
+.animate-in.fade {
   opacity: 1;
   @include transition-duration(1.5s);
 }
-.animate-out .fade{
+.animate-out .fade,
+.animate-out.fade {
   opacity: 0;    
   @include transition-duration(1s);
 }
