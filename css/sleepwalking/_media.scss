@@ -5,7 +5,6 @@
 
 .media-body{
   color: #818792;
-  font-weight: 300;
 }
 .media-heading{
   @extend .h5;
@@ -14,7 +13,7 @@
   color: #2c3036;
 }
 .media > .pull-left {
-  margin-right: 32px;
+  margin-right: 36px;
 }
 
 .media-centered{
@@ -50,6 +49,8 @@
     height: 187px;
   }
   .media-text{
+    display: block;
+    margin-top: 12px;
     font-size: 14px;
     line-height: 21px;
     color: #818792;

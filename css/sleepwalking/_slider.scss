@@ -299,13 +299,14 @@
   .slider-pagination-page{
     height: 159px;
     overflow: hidden;
-    padding: 0;
     position: relative;
     float: none;
+    margin: 0;
+    @include transform(none);
     img{
       display: block;
       height: 100%;
-      width: auto;
+      width: 100%;
       position: relative;
     }
   }
