@@ -18,13 +18,28 @@
   box-shadow: none;
 }
 
-.navbar .nav > li > a {
-  color: $linkColor;
-  padding-top:66px;
-  &:hover {
-    color: $linkColorHover;
+.navbar .nav > li {
+  .dropdown-menu {
+    &:before, &:after{
+      display: none;
+    }
+  }
+  > a {
+    color: $linkColor;
+    padding-top:66px;
+    text-shadow: none;
+    &:hover {
+      color: $linkColorHover;
+    }
   }
 }
+
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: transparent;
+}
+
 
 
 .navbar .brand {
