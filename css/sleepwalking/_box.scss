@@ -5,11 +5,11 @@
 
 .box{
   .box-body{
-    background-color: #ffffff;
+    background-color: $white;
     padding: 24px;
   }
   .box-footer{
-    background-color: #e7edf1;
+    background-color: $grayLighter;
     border-radius: 0 0 6px 6px;
     padding: 24px;
   }
@@ -20,7 +20,7 @@
   padding: 24px;
   .box-header{
     margin-top: 0;
-    color: #fff;
+    color: $white;
     line-height: 26px;
     font-size: 26px;
   }
@@ -30,17 +30,17 @@
     position: absolute;
     bottom: 36px;
     line-height: 86px;
-    color: #ffffff;
+    color: $white;
   }
 }
 .box-count-days {
-  background-color: #4aa5ec;
+  background-color: $accent1;
 }
 .box-count-hours {
-  background-color: #4a87ec;
+  background-color: $accent2;
 }
 .box-count-minutes {
-  background-color: #7073ec;
+  background-color: $accent3;
 }
 
 //
@@ -49,7 +49,7 @@
 
 .card {
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: $white;
   display: block;
   overflow: hidden;
 }
@@ -68,10 +68,10 @@
 .card-heading{
   margin-top:0;
   margin-bottom:8px;
-  color: #2c3036;
+  color: $grayDarker;
 }
 .card-text{
-  color:#818792;
+  color:$grayLight;
   display: block;
 }
 .card-link{
@@ -84,7 +84,7 @@
   @extend .card;
   border-radius: 0;
   min-height: 384px;
-  background-color: #ffffff;
+  background-color: $white;
   display: block;
   overflow: hidden;
   margin-bottom: 2px;
@@ -115,8 +115,8 @@
   @extend .card;
   .card-head{
     padding:24px;
-    background-color: #4aa5ec;
-    color: #ffffff;
+    background-color: $accent1;
+    color: $white;
   }
   .plan-title, .plan-term{
     @include text-medium;
@@ -134,11 +134,11 @@
   .plan-options{
     margin: 0;
     margin-left: 18px;
-    color: #818792;
+    color: $grayLight;
     margin-bottom: 94px;
   }
   .btn{
-    background-color: #4aa5ec;
+    background-color: $accent1;
   }
 }
 .card-plan-medium {
@@ -155,7 +155,7 @@
     margin-left: 36px;
   }
   .card-head, .btn {
-    background-color: #4a87ec;
+    background-color: $blue;
   }
   .btn{
     margin: 0 12px 12px 12px;
@@ -165,17 +165,17 @@
 .card-plan-large {
   @extend .card-plan;
   .card-head, .btn {
-    background-color: #7073ec;
+    background-color: $accent3;
   }
   .btn {
-    background-color: #7073ec;
+    background-color: $accent3;
   }
 }
 .card-profile{
   @extend .card;
     border-radius: 0;
     min-height: 384px;
-    background-color: #ffffff;
+    background-color: $white;
     display: block;
     overflow: hidden;
     margin-bottom: 2px;
@@ -201,7 +201,7 @@
       overflow: hidden;
     }
     .card-heading{
-      color:#4a87ec;
+      color:$blue;
       margin-bottom:0;
     }
     .card-text{
@@ -223,7 +223,7 @@
       border-radius:6px;
     }
     .card-heading{
-      color:#4a87ec;
+      color:$blue;
       margin-bottom:0;
     }
     .card-text{
@@ -232,7 +232,7 @@
       text-transform: uppercase;
     }
     .card-body{
-      background-color: #ffffff;
+      background-color: $white;
       position: absolute;
       bottom: 0;
       width: 100%;

@@ -9,13 +9,13 @@
   li {
     // height: 72px;
     // line-height: 72px;
-    // background-color: #e7edf1;
+    // background-color: $grayLighter;
     // color:#a2a7ab;
     // font-size: 26px;
     a{
       height: 72px;
       line-height: 72px;
-      background-color: #e7edf1;
+      background-color: $grayLighter;
       color:#a2a7ab;
       font-size: 26px;
       border-radius: 0;
@@ -23,7 +23,7 @@
       padding:0 12px;
       margin-right: 12px;
       &:hover{
-        background-color: #e7edf1;
+        background-color: $grayLighter;
       }
     }
 
@@ -34,7 +34,7 @@
   .active a, .active a:hover {
     color: #44474c;
     border: none;
-    background-color: #fff;
+    background-color: $white;
   }
 }
 .nav-tabs-signup {

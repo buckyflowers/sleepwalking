@@ -55,14 +55,14 @@
 .man {margin: 0 !important;}
 .block{display: block !important;}
 .inverted{
-  color: #fff !important;
+  color: $white !important;
 }
 a.inverted:hover,
 a .inverted:hover{
   opacity: .7;
 }
 .light {color:#8b94a0;}
-.dark {color:#2c3036;}
+.dark {color:$grayDarker;}
 
 .bold{font-weight: bold;}
 

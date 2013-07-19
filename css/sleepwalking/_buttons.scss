@@ -10,9 +10,9 @@
   font-size: 26px;
   font-weight: bold;
   line-height: 48px;
-  color: #ffffff;
+  color: $white;
   text-shadow: none;
-  background-color: #4a87ec;
+  background-color: $blue;
   background-image: none;
   border: none;
   border-radius: 6px;
@@ -30,7 +30,7 @@
   }
   &:hover {
     &:before {
-      background: #fff;
+      background: $white;
       opacity: .1;
     }
   }
@@ -48,8 +48,8 @@
 .btn.active,
 .btn.disabled,
 .btn[disabled] {
-  background-color: #4a87ec;
-  color: #ffffff;
+  background-color: $blue;
+  color: $white;
 }
 .btn-huge {
   height: 102px;
@@ -61,8 +61,8 @@
 }
 .btn-huge-alt {
   @extend .btn-huge;
-  background-color: #35c877;
+  background-color: $buttonColor;
   &:hover {
-    background-color: #35c877;
+    background-color: $buttonColor;
   }
 }

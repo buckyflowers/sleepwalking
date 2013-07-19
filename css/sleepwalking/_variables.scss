@@ -10,31 +10,46 @@
 // Grays
 // -------------------------
 $black:                 #000 !default;
-$grayDarker:            #222 !default;
+$grayDarker:            #2c3036 !default; //sleepwalking
 $grayDark:              #333 !default;
 $gray:                  #555 !default;
-$grayLight:             #999 !default;
-$grayLighter:           #eee !default;
+$grayLight:             #818792 !default; //sleepwalking
+$grayLighter:           #e7edf1 !default; //sleepwalking
 $white:                 #fff !default;
 
 
 // Accent colors
 // -------------------------
-$blue:                  #049cdb !default;
+$blue:                  #4a87ec !default; //sleepwalking
 $blueDark:              #0064cd !default;
-$green:                 #46a546 !default;
+$green:                 #35c877 !default; //sleepwalking
 $red:                   #9d261d !default;
 $yellow:                #ffc40d !default;
 $orange:                #f89406 !default;
 $pink:                  #c3325f !default;
-$purple:                #7a43b6 !default;
+$purple:                #7073ec !default; //sleepwalking
 
 
-// Scaffolding
+
+// Theme
 // -------------------------
 $htmlBackground:        #384052 !default; //sleepwalking
 $bodyBackground:        #e7edf1 !default; //sleepwalking
 $textColor:             #2c3036 !default; //sleepwalking
+
+$backgroundColor:       #667085 !default; //sleepwalking
+$backgroundColorDark:   #444d60 !default; //sleepwalking
+$backgroundColorDarker: #384052 !default; //sleepwalking
+
+$accent1:               #4aa5ec  !default; //sleepwalking - light blue
+$accent2:               #4a87ec  !default; //sleepwalking - blue
+$accent3:               #7073ec  !default; //sleepwalking - purple
+$accent4:               #9670ec  !default; //sleepwalking - purple
+$accent5:               #8055e3  !default; //sleepwalking - purple
+
+$buttonColor:           #35c877  !default; //sleepwalking - green
+$borderRadius:          6px  !default; //sleepwalking - green
+
 
 
 // Links
@@ -195,7 +210,7 @@ $navbarCollapseWidth:             979px !default;
 $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
 
 $navbarHeight:                    40px !default;
-$navbarBackgroundHighlight:       #ffffff !default;
+$navbarBackgroundHighlight:       $white !default;
 $navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
 $navbarBorder:                    darken($navbarBackground, 12%) !default;
 
@@ -230,7 +245,7 @@ $navbarInverseBrandColor:                $navbarInverseLinkColor !default;
 
 // Pagination
 // -------------------------
-$paginationBackground:                #fff !default;
+$paginationBackground:                $white !default;
 $paginationBorder:                    #ddd !default;
 $paginationActiveBackground:          #f5f5f5 !default;
 
@@ -263,14 +278,14 @@ $infoBorder:              darken(adjust-hue($infoBackground, -10), 7%) !default;
 
 // Tooltips and popovers
 // -------------------------
-$tooltipColor:            #fff !default;
+$tooltipColor:            $white !default;
 $tooltipBackground:       #000 !default;
 $tooltipArrowWidth:       5px !default;
 $tooltipArrowColor:       $tooltipBackground !default;
 
-$popoverBackground:       #fff !default;
+$popoverBackground:       $white !default;
 $popoverArrowWidth:       10px !default;
-$popoverArrowColor:       #fff !default;
+$popoverArrowColor:       $white !default;
 $popoverTitleBackground:  darken($popoverBackground, 3%) !default;
 
 // Special enhancement for popovers

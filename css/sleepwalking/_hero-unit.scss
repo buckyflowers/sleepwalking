@@ -15,11 +15,11 @@
 }
 .hero-heading{
   @include text-medium;
-  color:#ffffff;
+  color:$white;
   margin-bottom: 32px
 }
 .hero-text{
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 24px;
 }

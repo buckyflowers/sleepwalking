@@ -27,7 +27,7 @@
   @extend .section;
   margin-bottom: 72px;
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: $white;
   .section-heading{
     padding: 26px 36px 0;
   }
@@ -35,27 +35,27 @@
 .section-pricing {
   @extend .section;
   padding-top: 72px;
-  background-color: #667085;
+  background-color: $backgroundColor;
   .section-heading{
     margin-bottom:36px;
   }
 }
 .section-cta{
   @extend .section;
-  background-color: #667085;
+  background-color: $backgroundColor;
   margin-bottom: 0;
   padding-bottom: 72px;
 }
 .section-dark{
   @extend .section;
   margin-bottom: 0;
-  background-color: #444d60;
+  background-color: $backgroundColorDark;
   padding: 72px 0;
 }
 .section-portfolio-features{
   @extend .section;
   .section-sub{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $white;
     @extend .section-dark;
   }
   .section-sub:first-child{
@@ -69,18 +69,18 @@
 }
 .section-footer{
   @extend .section;
-  background-color: #384052;
+  background-color: $backgroundColorDarker;
   margin-bottom: 0;
   height: 90px;
   line-height: 90px;  
-  color: #818792;
+  color: $grayLight;
   .footer-links{
     float: left;
     line-height: 90px;
     .footer-link{
-      color:#ffffff;
+      color:$white;
       &:hover{
-        color:#ffffff;
+        color:$white;
         opacity: .7;
       }
     }

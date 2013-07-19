@@ -9,7 +9,7 @@
 
 .navbar .navbar-inner {
   min-height: 132px;
-  background-color: #ffffff;
+  background-color: $white;
   background-image: none;
   background-repeat: repeat-x;
   border:none;
@@ -19,10 +19,10 @@
 }
 
 .navbar .nav > li > a {
-  color: #4a87ec;
+  color: $linkColor;
   padding-top:66px;
   &:hover {
-    color: #76a7f8;
+    color: $linkColorHover;
   }
 }
 
@@ -31,7 +31,7 @@
   padding: 0;
   padding-top:54px;
   margin: 0;
-  color: #2c3036;
+  color: $grayDarker;
   font-size: 42px;
 }
 .navbar .brand-slogan {

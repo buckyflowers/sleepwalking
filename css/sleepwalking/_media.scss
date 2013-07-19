@@ -4,13 +4,13 @@
 
 
 .media-body{
-  color: #818792;
+  color: $grayLight;
 }
 .media-heading{
   @extend .h5;
   line-height: 24px;
   margin: 0; 
-  color: #2c3036;
+  color: $grayDarker;
 }
 .media > .pull-left {
   margin-right: 36px;
@@ -19,7 +19,7 @@
 .media-centered{
   @extend .media;
   .media-body{
-    color: #818792;
+    color: $grayLight;
     font-weight: 300;
     text-align: center;
   }
@@ -27,7 +27,7 @@
     @extend .h5;
     line-height: 24px;
     margin: 0; 
-    color: #2c3036;
+    color: $grayDarker;
   }
   .media-block {
     margin-right: 0;
@@ -38,7 +38,7 @@
 
 .media-profile{
   @extend .media;
-  background-color:#ffffff;
+  background-color:$white;
   border-radius: 6px;
   overflow: hidden;
   .media-image{
@@ -53,6 +53,6 @@
     margin-top: 12px;
     font-size: 14px;
     line-height: 21px;
-    color: #818792;
+    color: $grayLight;
   }
 }

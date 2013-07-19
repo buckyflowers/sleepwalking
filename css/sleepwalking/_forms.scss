@@ -56,7 +56,7 @@ input[type="color"],
      -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
        -o-transition: border linear 0.2s, box-shadow linear 0.2s;
           transition: border linear 0.2s, box-shadow linear 0.2s;
-  background-color: #e7edf1;
+  background-color: $grayLighter;
   border: none;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
@@ -105,7 +105,7 @@ textarea::-webkit-input-placeholder {
   color: #b2b7bb;
 }
 .input-white {
-  background-color:#fff !important; // bootstrap is too specific, attribute selectors beats a simple class
+  background-color:$white !important; // bootstrap is too specific, attribute selectors beats a simple class
 }
 
 .input-append{
