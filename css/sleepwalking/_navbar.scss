@@ -18,13 +18,28 @@
   box-shadow: none;
 }
 
-.navbar .nav > li > a {
-  color: #4a87ec;
-  padding-top:66px;
-  &:hover {
-    color: #76a7f8;
+.navbar .nav > li {
+  .dropdown-menu {
+    &:before, &:after{
+      display: none;
+    }
+  }
+  > a {
+    color: #4a87ec;
+    padding-top:66px;
+    text-shadow: none;
+    &:hover {
+      color: #76a7f8;
+    }
   }
 }
+
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: transparent;
+}
+
 
 
 .navbar .brand {
